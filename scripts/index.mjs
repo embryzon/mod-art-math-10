@@ -1,5 +1,15 @@
-import truncatedTable from "../modules/TruncatedTable.mjs";
+// import truncatedTable from "../modules/TruncatedTable.mjs";
 
+let arrayPattern = [
+    [6, 5, 4, 3, 2, 1], 
+    [4, 1, 5, 2, 6, 3],
+    [5, 3, 1, 6, 4, 2],
+    [2, 4, 6, 1, 3, 5],
+    [3, 6, 2, 5, 1, 4],
+    [1, 2, 3, 4, 5, 6]
+]
+
+let truncatedTable = arrayPattern
 const canvas = document.getElementById('canvas1')
 const ctx = canvas.getContext('2d')
 
@@ -23,4 +33,22 @@ for (let i = 0; i < truncatedTable.length; i++){
         }
     }
     
+}
+
+const downloadButton = document.getElementById('downloadButton');
+downloadButton.addEventListener('click', () => {
+    downloadCanvasAsImage('canvas1', 'my_image.png');
+});
+
+function downloadCanvasAsImage(canvasId, fileName) {
+    const canvas = document.getElementById(canvasId);
+    const url = canvas.toDataURL('image/png');
+
+    // Create a temporary anchor element to trigger the download
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = fileName;
+
+    // Simulate a click on the anchor element to initiate the download
+    link.click();
 }
