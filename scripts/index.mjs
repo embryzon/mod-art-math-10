@@ -3,7 +3,7 @@ import truncatedTable from "../modules/TruncatedTable.mjs";
 const canvas = document.getElementById('canvas1')
 const ctx = canvas.getContext('2d')
 
-let imgSize = 150
+let imgSize = 100
 
 canvas.height = imgSize * truncatedTable.length
 canvas.width = canvas.height
