@@ -1,0 +1,13 @@
+:root {
+    --menu-width: 300px;
+    --menu-height: 400px;
+}
+
+*,*:before,*::after{
+    margin: 0;
+    padding: 0;
+}
+
+#canvas1 {
+    border: 1px solid green;
+}
