@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modular Art</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="../scripts/index.mjs"></script>
 </head>
 <body>
-<canvas id="canvas1"></canvas> 
-<button id="downloadButton">Download Image</button>  
+<div class="container">
+    <h1>Main Pattern</h1>
+    <canvas id="canvas1"></canvas> 
+    <button id="downloadButton">Download Image</button>  
+    <br>
+    <script type="module" src="../scripts/mainPattern.mjs">
+    </script>
+
+    <h2>Repeated</h2>
+    <canvas id="repeatedCanvas"></canvas> 
+    <button id="downloadRepeated">Download Image</button>  
+    <br>
+
+    <h2>Rotated</h2>
+    <canvas id="rotatedCanvas"></canvas> 
+    <button id="downloadRotated">Download Image</button>  
+    <br>
+
+    <h2>Reflected</h2>
+    <canvas id="reflectedCanvas"></canvas> 
+    <button id="downloadReflected">Download Image</button> 
+    <br>
+</div> 
+
+<script defer src="../scripts/repeatedPattern.js"></script>
+<script defer src="../scripts/rotatedPattern.js"></script>
+<script defer src="../scripts/reflectedPattern.js"></script>
+
 </body>
 </html>

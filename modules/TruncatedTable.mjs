@@ -8,6 +8,17 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
-shuffleArray(truncatedTable);
+// shuffleArray(truncatedTable);
+
+// let arrayPattern = [
+//     [6, 5, 4, 3, 2, 1], 
+//     [4, 1, 5, 2, 6, 3],
+//     [5, 3, 1, 6, 4, 2],
+//     [2, 4, 6, 1, 3, 5],
+//     [3, 6, 2, 5, 1, 4],
+//     [1, 2, 3, 4, 5, 6]
+// ]
+
+// let truncatedTable = arrayPattern
 console.table(truncatedTable)
 export default truncatedTable

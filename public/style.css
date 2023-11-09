@@ -4,10 +4,24 @@
 }
 
 *,*:before,*::after{
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 
-#canvas1 {
-    border: 1px solid green;
+
+canvas {
+    border: 2px solid black;
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+
+    padding: 10px;
 }
