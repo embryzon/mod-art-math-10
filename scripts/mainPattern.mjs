@@ -16,9 +16,9 @@ import truncatedTable from "../modules/TruncatedTable.mjs";
                 image.onload = ()=>{
                     const x = (canvas.width/6) * j
                     const y = (canvas.height/6) * i
-                    // ctx.drawImage(image,x,y,imgSize,imgSize)
-                    ctx.fillStyle = `rgb(${(truncatedTable[i][j]*60)%255},${(truncatedTable[i][j]*60)%255},0)`
-                    ctx.fillRect(x,y,imgSize,imgSize)
+                    ctx.drawImage(image,x,y,imgSize,imgSize)
+                    // ctx.fillStyle = `rgb(${(truncatedTable[i][j]*60)%255},${(truncatedTable[i][j]*60)%255},0)`
+                    // ctx.fillRect(x,y,imgSize,imgSize)
                 }
             }
             
